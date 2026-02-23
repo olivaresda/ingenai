@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Olivares | Interim Manager & Innovación | IngenAI</title>
+    <meta name="description" content="Interim Manager especialista en Order to Cash, Innovación e Inteligencia Artificial. Resultados tangibles en momentos de transición.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#0070f3', /* Azul Rey (CTA) basado en la imagen */
+                            700: '#005bb5',
+                        },
+                        navy: {
+                            800: '#1a2942',
+                            900: '#0f172a', /* Azul Marino muy oscuro (Fondo y tarjetas) */
+                            950: '#0b1120',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navegación Estilo Ejecutivo (Fondo Oscuro) -->
+    <nav class="fixed w-full bg-navy-900 text-white z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="font-bold text-2xl tracking-tight uppercase">DANIEL OLIVARES</span>
+                    <span class="text-slate-400 text-sm hidden sm:inline-block border-l border-slate-600 pl-2 ml-2">IngenAI</span>
+                </div>
+                
+                <!-- Menú Desktop -->
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                    <a href="#servicios" class="text-slate-300 hover:text-white transition-colors">Servicios</a>
+                    <a href="#casos" class="text-slate-300 hover:text-white transition-colors">Casos de Éxito</a>
+                    <a href="#innovacion" class="text-slate-300 hover:text-white transition-colors">Innovación & IA</a>
+                    <a href="#contacto" class="bg-brand-600 text-white px-5 py-2.5 rounded hover:bg-brand-700 transition-colors shadow-sm">Agendar Consulta</a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-800 border-t border-navy-950 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#servicios" class="block px-3 py-2 text-slate-300 hover:bg-navy-900 hover:text-white rounded-md">Servicios</a>
+                <a href="#casos" class="block px-3 py-2 text-slate-300 hover:bg-navy-900 hover:text-white rounded-md">Casos de Éxito</a>
+                <a href="#innovacion" class="block px-3 py-2 text-slate-300 hover:bg-navy-900 hover:text-white rounded-md">Innovación & IA</a>
+                <a href="#contacto" class="block px-3 py-2 mt-4 bg-brand-600 text-white text-center rounded-md font-medium">Agendar Consulta</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center pt-12 pb-16 lg:py-20 gap-12">
+                
+                <!-- Foto a la izquierda (Estilo imagen referencia) -->
+                <div class="w-full lg:w-5/12 flex justify-center lg:justify-start">
+                    <!-- Reemplaza el src con tu fotografía con fondo transparente o gris claro -->
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-slate-200 rounded-2xl transform rotate-2"></div>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="Daniel Olivares" class="relative rounded-2xl shadow-lg w-full object-cover aspect-[4/5]">
+                    </div>
+                </div>
+
+                <!-- Textos y Propuesta de Valor a la derecha -->
+                <div class="w-full lg:w-7/12 space-y-6">
+                    <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight tracking-tight">
+                        Resultados tangibles en momentos de transición
+                    </h1>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        Interim Manager especializado en Operaciones y Finanzas (<strong class="text-slate-800">Order to Cash</strong>) e Innovación Tecnológica (IA). Liderando equipos corporativos hacia la rentabilidad y eficiencia operativa en tiempos récord.
+                    </p>
+                    
+                    <div class="pt-2 pb-4">
+                        <a href="#contacto" class="inline-block bg-brand-600 text-white font-medium px-8 py-3.5 rounded shadow-lg hover:bg-brand-700 transition-colors">
+                            Hablemos de tu proyecto
+                        </a>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-900 mb-4">¿Tu empresa está pasando por una transición crítica?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa-regular fa-circle-check text-brand-600 mt-1 mr-3 text-lg"></i>
+                                <span class="text-slate-700">Vacantes inesperadas en el C-Level o Gerencias de Primera Línea.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-regular fa-circle-check text-brand-600 mt-1 mr-3 text-lg"></i>
+                                <span class="text-slate-700">Necesidad de profesionalizar o automatizar procesos financieros rápidamente.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-regular fa-circle-check text-brand-600 mt-1 mr-3 text-lg"></i>
+                                <span class="text-slate-700">Crisis de liquidez por cuellos de botella en el ciclo <em>Order to Cash</em>.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios / Propuesta de Valor (Tarjetas Oscuras Estilo Imagen) -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-10">Servicios / Propuesta de Valor</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-navy-900 text-white p-8 flex flex-col items-center justify-center text-center aspect-square shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-money-bill-transfer text-4xl mb-6 text-brand-500"></i>
+                    <h3 class="font-semibold text-lg leading-tight">Optimización<br>Order to Cash</h3>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-navy-900 text-white p-8 flex flex-col items-center justify-center text-center aspect-square shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-user-tie text-4xl mb-6 text-brand-500"></i>
+                    <h3 class="font-semibold text-lg leading-tight">Liderazgo de<br>Transición</h3>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-navy-900 text-white p-8 flex flex-col items-center justify-center text-center aspect-square shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-gears text-4xl mb-6 text-brand-500"></i>
+                    <h3 class="font-semibold text-lg leading-tight">Gestión de Crisis<br>y Procesos</h3>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-navy-900 text-white p-8 flex flex-col items-center justify-center text-center aspect-square shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fa-solid fa-microchip text-4xl mb-6 text-brand-500"></i>
+                    <h3 class="font-semibold text-lg leading-tight">Innovación e<br>Inteligencia Artificial</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué Daniel Olivares (Casos de éxito y Social Proof) -->
+    <section id="casos" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-10">Por qué Daniel Olivares</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Columna Izquierda: Pilares -->
+                <div class="w-full lg:w-1/4 flex flex-col justify-center space-y-8 border-l-4 border-navy-900 pl-6">
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900">Experiencia Real</h4>
+                        <p class="text-slate-600 text-sm mt-2">Más de 20 años transformando organizaciones desde adentro, no solo diagnosticando.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900">Orientación a Resultados</h4>
+                        <p class="text-slate-600 text-sm mt-2">Implementación de métricas (KPIs) claras desde el día uno de la gestión.</p>
+                    </div>
+                </div>
+
+                <!-- Columna Central: Logos y Testimonios -->
+                <div class="w-full lg:w-2/4 space-y-8">
+                    <!-- Logos (Placeholder text style) -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex justify-around items-center opacity-70 grayscale">
+                        <span class="font-bold text-xl text-slate-400"><i class="fa-brands fa-aws mr-2"></i>TechCorp</span>
+                        <span class="font-bold text-xl text-slate-400"><i class="fa-solid fa-building mr-2"></i>GlobalLog</span>
+                        <span class="font-bold text-xl text-slate-400"><i class="fa-solid fa-industry mr-2"></i>Industries S.A</span>
+                    </div>
+
+                    <!-- Testimonios -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 relative">
+                            <i class="fa-solid fa-quote-left text-3xl text-slate-200 absolute top-4 left-4"></i>
+                            <p class="text-slate-700 italic relative z-10 pt-4 text-sm">"No soy de dar recomendaciones fácilmente, pero la capacidad de Daniel para estabilizar nuestra crisis de cobranza fue excepcional. Un gestor que actúa."</p>
+                            <p class="text-xs font-bold text-slate-900 mt-4">- CEO, Empresa Servicios B2B</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 relative">
+                            <i class="fa-solid fa-quote-left text-3xl text-slate-200 absolute top-4 left-4"></i>
+                            <p class="text-slate-700 italic relative z-10 pt-4 text-sm">"Daniel tiene una capacidad analítica poco común. Reestructuró nuestros procesos operativos en menos de 6 meses."</p>
+                            <p class="text-xs font-bold text-slate-900 mt-4">- Directorio, Sector Logístico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Caso de Éxito Estructurado -->
+                <div class="w-full lg:w-1/4">
+                    <div class="bg-white shadow-lg border border-slate-100 rounded-lg overflow-hidden h-full flex flex-col">
+                        <div class="bg-navy-900 text-white p-4">
+                            <h4 class="font-bold text-center">Caso de Éxito: O2C</h4>
+                        </div>
+                        <div class="p-5 flex-grow space-y-4 text-sm text-slate-700">
+                            <div>
+                                <strong class="block text-slate-900 mb-1"><i class="fa-solid fa-crosshairs text-brand-600 w-5"></i> Reto</strong>
+                                <p>Alta morosidad y descontrol en ciclo de facturación.</p>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900 mb-1"><i class="fa-solid fa-bolt text-brand-600 w-5"></i> Acción</strong>
+                                <p>Toma de control gerencial, automatización de alertas e integración ERP.</p>
+                            </div>
+                            <div class="bg-brand-50 p-3 rounded border border-brand-100">
+                                <strong class="block text-brand-700 mb-1"><i class="fa-solid fa-chart-line text-brand-600 w-5"></i> Resultados</strong>
+                                <ul class="list-disc pl-4 mt-1 space-y-1">
+                                    <li>Reducción DSO en 35 días.</li>
+                                    <li>Aumento liquidez 20% en 6 meses.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La sección "Fresca": Innovación y Educación -->
+    <section id="innovacion" class="py-20 bg-navy-900 text-white relative overflow-hidden">
+        <!-- Elemento decorativo sutil -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <span class="bg-brand-600/20 text-brand-400 text-xs font-bold px-3 py-1 rounded tracking-widest uppercase border border-brand-500/30">Proyecto IngenAI</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Educación en Innovación e Inteligencia Artificial</h2>
+                    <p class="text-slate-300 text-lg">
+                        Conectando la academia y el directorio con la industria tecnológica. Traduzco conceptos complejos de IA en aplicaciones prácticas de negocio para que tu equipo no se quede atrás.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                        <div class="border-l-2 border-brand-500 pl-4">
+                            <h4 class="font-bold text-white text-lg">Equipos Técnicos</h4>
+                            <p class="text-sm text-slate-400 mt-1">Adopción de herramientas de IA Generativa enfocadas en rentabilidad.</p>
+                        </div>
+                        <div class="border-l-2 border-brand-500 pl-4">
+                            <h4 class="font-bold text-white text-lg">Academia y Directorio</h4>
+                            <p class="text-sm text-slate-400 mt-1">Masterclasses sobre tendencias tecnológicas y toma de decisiones basadas en datos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Dashboard Analítico" class="rounded-lg shadow-2xl border border-navy-800 opacity-90">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-navy-900 p-5 rounded shadow-xl max-w-xs">
+                        <i class="fa-solid fa-graduation-cap text-brand-600 text-2xl mb-2"></i>
+                        <p class="font-bold">Formación Ejecutiva</p>
+                        <p class="text-xs text-slate-600">Charlas y talleres disponibles para tu organización.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-brand-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
+                    <i class="fa-brands fa-linkedin text-3xl"></i> Newsletter: Order to Cash & Estrategia
+                </h2>
+                <p class="text-brand-100">Únete a mi red y lee mis publicaciones semanales sobre optimización de liquidez, gestión de cobranzas y tecnología financiera.</p>
+            </div>
+            <div class="md:w-1/3 text-left md:text-right">
+                <a href="https://cl.linkedin.com/in/dolivares" target="_blank" class="inline-block bg-white text-brand-700 font-bold px-8 py-3 rounded shadow hover:bg-slate-50 transition-colors">
+                    Suscribirse en LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Contacto -->
+    <section id="contacto" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <!-- FAQ y Llamado a la acción -->
+                <div class="w-full lg:w-5/12">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Preguntas Frecuentes</h2>
+                    <div class="space-y-4 mb-10">
+                        <details class="group bg-white border border-slate-200 rounded p-4 cursor-pointer">
+                            <summary class="font-semibold text-slate-900 list-none flex justify-between items-center">
+                                ¿Qué diferencia a un Interim Manager de un consultor?
+                                <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                            </summary>
+                            <p class="text-slate-600 mt-3 text-sm">El consultor diagnostica y aconseja. El Interim Manager se integra a la estructura directiva, ejecuta las soluciones, asume responsabilidades y, tras cumplir los objetivos, traspasa el mando a un recurso definitivo.</p>
+                        </details>
+                        <details class="group bg-white border border-slate-200 rounded p-4 cursor-pointer">
+                            <summary class="font-semibold text-slate-900 list-none flex justify-between items-center">
+                                ¿En qué sectores has trabajado?
+                                <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                            </summary>
+                            <p class="text-slate-600 mt-3 text-sm">He liderado proyectos de optimización Order to Cash y adopción tecnológica en industrias de servicios, logística, educación corporativa y tecnología (SaaS).</p>
+                        </details>
+                    </div>
+
+                    <div class="bg-brand-600 text-white p-6 rounded shadow-lg">
+                        <h3 class="font-bold text-xl mb-2">¿Listo para estabilizar y escalar tu negocio?</h3>
+                        <p class="text-brand-100 text-sm mb-4">Agenda una reunión exploratoria de 20 minutos sin compromiso.</p>
+                        <a href="https://cl.linkedin.com/in/dolivares" class="inline-block bg-navy-900 text-white px-6 py-2 rounded font-medium hover:bg-navy-800 transition-colors text-sm">
+                            <i class="fa-regular fa-calendar mr-2"></i> Agendar en Calendly
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario limpio -->
+                <div class="w-full lg:w-7/12">
+                    <form id="contactForm" class="bg-white p-8 rounded border border-slate-200 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6">Envíame un mensaje</h3>
+                        
+                        <div class="space-y-5">
+                            <div>
+                                <input type="text" id="nombre" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-slate-200 focus:ring-0 focus:border-brand-600 outline-none transition-colors text-slate-900 placeholder-slate-400" placeholder="Nombre completo">
+                            </div>
+                            
+                            <div>
+                                <input type="email" id="email" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-slate-200 focus:ring-0 focus:border-brand-600 outline-none transition-colors text-slate-900 placeholder-slate-400" placeholder="Correo electrónico corporativo">
+                            </div>
+
+                            <div>
+                                <select id="motivo" class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-slate-200 focus:ring-0 focus:border-brand-600 outline-none transition-colors text-slate-600">
+                                    <option value="" disabled selected>Motivo del contacto</option>
+                                    <option value="Interim">Proyecto de Interim Management</option>
+                                    <option value="Consultoria">Optimización Order to Cash</option>
+                                    <option value="Educacion">Charla / Taller sobre IA e Innovación</option>
+                                    <option value="Otro">Networking / Otros</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <textarea id="mensaje" rows="3" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-slate-200 focus:ring-0 focus:border-brand-600 outline-none transition-colors text-slate-900 placeholder-slate-400 resize-none" placeholder="Cuéntame brevemente sobre la situación de tu empresa..."></textarea>
+                            </div>
+
+                            <button type="submit" class="bg-navy-900 text-white font-medium px-8 py-3 rounded hover:bg-navy-800 transition-colors shadow-md w-full sm:w-auto">
+                                Enviar Mensaje
+                            </button>
+                            
+                            <div id="formSuccess" class="hidden mt-4 p-3 bg-green-50 text-green-700 border border-green-200 rounded text-sm font-medium">
+                                ¡Mensaje enviado! Me contactaré contigo a la brevedad.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-slate-900 font-bold uppercase tracking-wider text-sm">
+                Daniel Olivares <span class="text-brand-600 ml-1">IngenAI</span>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="https://cl.linkedin.com/in/dolivares" target="_blank" class="text-slate-400 hover:text-brand-600 transition-colors text-xl">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:tuemail@ingenai.cl" class="text-slate-400 hover:text-brand-600 transition-colors text-xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="text-xs text-slate-500">
+                &copy; <span id="year"></span> Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Simulación formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Enviando...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                this.reset();
+                const successMsg = document.getElementById('formSuccess');
+                successMsg.classList.remove('hidden');
+                setTimeout(() => { successMsg.classList.add('hidden'); }, 4000);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
