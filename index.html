@@ -450,8 +450,8 @@
             document.getElementById('formSuccess').classList.add('hidden');
             document.getElementById('formError').classList.add('hidden');
 
-            // Envío de datos al Script de Google
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            // Envío de datos al Script de Google (se añade mode: 'no-cors' para evitar errores de CORS)
+            fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors'})
                 .then(response => {
                     btn.innerHTML = originalText;
                     btn.disabled = false;
